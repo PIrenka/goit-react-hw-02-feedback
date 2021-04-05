@@ -30,16 +30,10 @@ class App extends Component {
   };
 
   render() {
-    // console.log('this: ', this);
-    // console.log('this.state: ', this.state);
-    // console.log('this.countTotalFeedbacks(): ', this.countTotalFeedbacks());
-    // console.log('countPositivePercantage(): ', this.countPositivePercantage());
+    
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedbacks();
-    // const positivePercantage = this.countPositivePercantage;!!!!!!!!!!!!!!
-    // console.log('without ()', this.countPositivePercantage);
     const positivePercantage = this.countPositivePercantage();
-    // console.log('with ()', this.countPositivePercantage());
 
     return (
       <div>

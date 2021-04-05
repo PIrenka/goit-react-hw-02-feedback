@@ -27,8 +27,8 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  positivePercantage: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercantage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
