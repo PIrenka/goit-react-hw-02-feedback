@@ -11,9 +11,14 @@ class Votes extends Component {
   // static defaultProps = {}
   // static propTypes = {}
 
+  // handleClick() {
+  //   this.setState(prevState => {
+  //     console.log(prevState.good);
+  //     return { value: prevState.good + 1 };
+  //   });
+  // }
   handleClick(evt) {
-    console.log('Increment button was clicked!', evt); // работает
-    // console.log('this.props: ', this.props); // работает
+    console.log('click to good', evt);
   }
 
   render() {
@@ -22,6 +27,9 @@ class Votes extends Component {
         <button onClick={this.handleClick} className={Styles.btn} key="good">
           Good
         </button>
+        {/* <button onClick={this.handleClick} className={Styles.btn} key="good">
+          Good
+        </button> */}
         <button className={Styles.btn} key="neutral">
           Neutral
         </button>
